@@ -1,4 +1,3 @@
-#http://www.aerospaceweb.org/question/dynamics/q0203.shtml
 import math
 def getVelocity(m,c,s):
     global g
