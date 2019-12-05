@@ -25,11 +25,11 @@ def askUser():
         if answer == '4':
             print("Enter the name of the object you are testing: ")
             objectName = input()
-            print("Enter the mass of the object in grams: ")
+            print("Enter the mass of the object (g): ")
             m = float(input())
             print("Enter the drag coefficient of the object: ")
             c = float(input())
-            print("Enter the reference/frontal area of the object: ")
+            print("Enter the reference/frontal area of the object (m^2): ")
             s = float(input())
             getVelocity(m,c,s)
         print("\nDo you want to open the menu again? (y/n)")
