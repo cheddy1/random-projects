@@ -11,7 +11,7 @@ def askUser():
     again = 'y'
     while again == 'y':
         global objectName
-        print("\n1) Penny\n2) Standard Brick\n3) Elephant\n4) Manual Input\nWhich object would you like to test? (1-5)")
+        print("\n1) Penny\n2) Standard Brick\n3) Elephant\n4) Manual Input\nWhich object would you like to test? (1-4)")
         answer = input()
         if answer == '1':
             objectName = 'Penny'
