@@ -1,6 +1,6 @@
 import aiohttp
 import requests
-api = "f7VAtjVl5wq9BFWGOjTbrSqjzZOVZTz0"
+api = "" #ACCUWEATHER API KEY
 location = input()
 key = requests.get("http://dataservice.accuweather.com/locations/v1/cities/search?apikey="+api+"&q="+location+"&language=en-us&details=false")
 key1 = key.text
