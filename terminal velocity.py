@@ -49,6 +49,6 @@ print("-------------------------------------------------------------------------
 print("Terminal velocity calculator coded in python by Christian Edwards on 12/3/2019.")
 print("All calculations made by this program are very rough estimates, presented to be simple.")
 print("Assumptions are made, including how the density of air is constant, even though it is not.")
-print("There is no checking for invalid user input, please always enter valid input.
+print("There is no checking for invalid user input, please always enter valid input.")
 print("--------------------------------------------------------------------------------------------")
 askUser()
