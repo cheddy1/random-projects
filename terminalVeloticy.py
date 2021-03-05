@@ -7,6 +7,7 @@ def getVelocity(m,c,s):
     m = m/1000 #Grams to kg
     velocity = math.sqrt((2*m*g)/(p*c*s)) #Terminal Velocity Formula
     printEverything(velocity,m,c,s)
+    
 def askUser():
     again = 'y'
     while again == 'y':
@@ -34,6 +35,7 @@ def askUser():
             getVelocity(m,c,s)
         print("\nDo you want to open the menu again? (y/n)")
         again = input()
+        
 def printEverything(v,m,c,s):
     v = round(v,5) #Round velocity to 5 decimals
     v = str(v) #Velocity
@@ -45,10 +47,13 @@ def printEverything(v,m,c,s):
     print("Drag Coefficient: "+c)
     print("Reference Area: "+s+" m^2")
     print("Terminal Velocity: "+v+" m/s")
-print("--------------------------------------------------------------------------------------------")
-print("Terminal velocity calculator coded in python by Christian Edwards on 12/3/2019.")
-print("All calculations made by this program are very rough estimates, presented to be simple.")
-print("Assumptions are made, including how the density of air is constant, even though it is not.")
-print("There is no checking for invalid user input, please always enter valid input.")
-print("--------------------------------------------------------------------------------------------")
-askUser()
+    
+if __name__=="__main__":      
+    print("--------------------------------------------------------------------------------------------")
+    print("Terminal velocity calculator coded in python by Christian Edwards on 12/3/2019.")
+    print("All calculations made by this program are very rough estimates, presented to be simple.")
+    print("Assumptions are made, including how the density of air is constant, even though it is not.")
+    print("There is no checking for invalid user input, please always enter valid input.")
+    print("--------------------------------------------------------------------------------------------")
+    askUser()
+
