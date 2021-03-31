@@ -1,3 +1,7 @@
+--Using library functions, define a Haskell function
+--halve :: [a] -> ([a],[a])
+--where halve splits an even-length list into two halves.
+
 halve :: [a] -> ([a], [a])
 halve list = (frontHalf,secondHalf)
   where
