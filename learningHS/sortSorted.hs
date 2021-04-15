@@ -1,3 +1,6 @@
+-- Write a sort function, and a correctness function called sorted. You can use sort, from the slides, as your sorter. 
+-- Remember to name your sort function sort, and the correctness function should be called sorted.
+
 import Data.List as L
 sortSlide :: Ord a => [a] -> [a]
 sortSlide []     = []
