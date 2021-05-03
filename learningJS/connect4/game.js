@@ -180,4 +180,26 @@ document.addEventListener("click", e => {
       window.location.reload(false); 
   }, 10);
   }
+
+  // Check if the board is full
+  var counter = 0;
+  for(let i = 0; i <= 5; i++) {
+    for(let j = 0; j <= 6; j++) {
+      if (model.board[i][j] == "."){
+        counter++
+      }
+    }
+  }
+  // If the board is full, reset the game
+  if (counter == 0) {
+    setTimeout(function(){
+      alert('Tie Game!');
+      for(let i = 0; i <= 5; i++) {
+        for(let j = 0; j <= 6; j++) {
+          model.board[i][j] = ".";
+        }
+      }
+      window.location.reload(false); 
+  }, 10);
+  }
 })
