@@ -1,0 +1,27 @@
+div.pageTitle {
+    position: fixed;
+    top: 200;
+    left: 810;
+    font-size: 60px;
+}
+div.name {
+    position: fixed;
+    top: 260;
+    left: 860;
+    font-size: 20px;
+}
+div.redPlayer {
+    position: fixed;
+    top: 400;
+    left: 800;
+    font-size: 20px;
+    Color: Red;
+}
+div.bluePlayer {
+    position: fixed;
+    top: 400;
+    left: 800;
+    font-size: 20px;
+    Color: blue;
+    display: none;
+}
